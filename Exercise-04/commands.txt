@@ -1,0 +1,6 @@
+docker build -t <image name>.
+docker run 80:8 <image name>
+
+Open browser and put the Ip adrress followed by the port number
+https://< ip address >:80
+
