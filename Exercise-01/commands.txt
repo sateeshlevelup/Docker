@@ -1,0 +1,5 @@
+Docker build  <name> .
+Docker run -ita <image name>
+
+Enter the Min value
+Enter the max Value

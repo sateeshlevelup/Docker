@@ -1,0 +1,2 @@
+docker build -t <imagename> .
+docker run -d -p 82:80 < image Name>

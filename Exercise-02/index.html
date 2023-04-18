@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>levelUP - Contact Information</title>
+  <style>
+    body {
+      background-color: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .container {
+      text-align: center;
+    }
+    .company-name {
+      font-size: 48px;
+      color: white;
+    }
+    .form {
+      margin-top: 20px;
+    }
+    .form input {
+      margin: 10px;
+    }
+    .form input[type="text"], .form input[type="tel"] {
+      padding: 10px;
+      width: 300px;
+    }
+    .form input[type="submit"] {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="company-name">Devops CLass</div>
+    <form class="form" action="/submit" method="post">
+      <input type="text" name="name" placeholder="Name" required>
+      <br>
+      <input type="text" name="location" placeholder="Location" required>
+      <br>
+      <input type="tel" name="phone" placeholder="Phone Number" required>
+      <br>
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+</body>
+</html>
