@@ -1,0 +1,14 @@
+Create  a image for a FE application
+ 
+  > use the base image as python:3.9-slim
+  > update the packages 
+  > run the command apt-get install -y --no-install-recommends \
+     curl \
+     && rm -rf /var/lib/apt/lists/*
+
+  > set the working direcotry as app
+  > copy the requirements.txt /app/requirements.txt
+  > install with pip requirements.txt
+  > open port 86
+  > copy the current folder to /app
+  > Run the commands ["gunicorn", "app:app", "-b", "0.0.0.0:80", "--log-file", "-", "--access-logfile", "-", "--workers", "4", "--keep-alive", "0"]
