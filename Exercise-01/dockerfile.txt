@@ -4,4 +4,4 @@ WORKDIR /app
 
 copy . /app
 
-CMD ["python","rng.py"]
+CMD ["python","code.py"]
