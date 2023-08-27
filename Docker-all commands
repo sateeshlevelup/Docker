@@ -1,3 +1,5 @@
 docker --version
 docker images
 docker images -q
+docker container  rm -f $(docker container ls -a  -q)
+docker rmi $(docker images -q)
