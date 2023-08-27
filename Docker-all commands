@@ -1,1 +1,3 @@
 docker --version
+docker images
+docker images -q
