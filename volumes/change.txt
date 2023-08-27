@@ -1,2 +1,0 @@
-   await fs.copyFile(tempFilePath, finalFilePath);
-   await fs.unlink(tempFilePath);
