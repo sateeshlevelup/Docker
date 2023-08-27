@@ -1,0 +1,18 @@
+What is a Bind Mount:-
+
+A bind mount is another type of mount, which lets you share a directory from the host's filesystem into the container. When working on an application, you can use a bind mount to mount source code into the container. The container sees the changes you make to the code immediately, as soon as you save a file. This means that you can run processes in the container that watch for filesystem changes and respond to them
+
+Steps for the hands on Exercise:-
+
+-> Create a folder by name <bindmount>
+          command :- mkdir bindmount
+-> Change the directory to bindmount
+          command :- cd bindmount
+-> create a index.html file and copy the code 
+           command :- vi index.html
+-> Create a conatiner with bind mount volume 
+           command:-  sudo docker run -d -p 8080:80 -v /home/ubuntu/bindmount:/usr/share/nginx/html --name webserver nginx
+-> Copy the ip address of the server and paste the follwing in the browser <ip address>:8080
+-> You will see a web page
+-> 
+
