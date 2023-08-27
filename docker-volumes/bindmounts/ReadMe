@@ -18,3 +18,6 @@ Steps for the hands on Exercise:-
             -> line no 39 make the "at levelUp" after you are learning Docker
 -> Refresh the webpage now you should be able to see the changes
 
+Note:-
+To copy the contents from the current Directory:-
+sudo docker run -d -p 8084:80 -v "$(pwd)":/usr/share/nginx/html --name webserver5 nginx
