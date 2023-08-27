@@ -14,5 +14,7 @@ Steps for the hands on Exercise:-
            command:-  sudo docker run -d -p 8080:80 -v /home/ubuntu/bindmount:/usr/share/nginx/html --name webserver nginx
 -> Copy the ip address of the server and paste the follwing in the browser <ip address>:8080
 -> You will see a web page
--> 
+-> Now make changes to file index.html
+            -> line no 39 make the add your name after you are learning Docker
+-> Refresh the webpage now you should be able to see the changes
 
