@@ -3,3 +3,104 @@ docker images
 docker images -q
 docker container  rm -f $(docker container ls -a  -q)
 docker rmi $(docker images -q)
+clear
+    2  docker --version
+    3  docker version
+    4  apt  install docker.io 
+    5  docker --version
+    6  clear
+    7  docker --help
+    8  docker images
+    9  clear
+   10  docker images
+   11  docker pull ubuntu
+   12  docker pull ubuntu:latest
+   13  docker images
+   14  dockerps
+   15  docker ps
+   16  docker run ubuntu
+   17  docker ps
+   18  docker ps -a
+   19  docker images
+   20  clear
+   21  docker run wordpress
+   22  docker images
+   23  docker ps -a
+   24  docker ps
+   25  clear
+   26  docker --help
+   27  clear
+   28  docker run -name levelup ubuntu
+   29  docker run --help
+   30  clear
+   31  docker run --name levelup ubuntu
+   32  docker ps -a
+   33  docker run --name wordlevel wordpress
+   34  docker ps -a
+   35  clear
+   36  docker ps -a
+   37  docker rm f02f56ec2551
+   38  docker ps -a
+   39  docker run --name practice ubuntu
+   40  docker run -it  --name practice1 ubuntu
+   41  docker run -itd  --name practice2 ubuntu
+   42  docker ps 
+   43  docker ps -a
+   44  clear
+   45  cd /
+   46  mkdir  levelup
+   47  ls
+   48  cd levelup
+   49  vi index.html
+   50  vi dockerfile
+   51  docker build -t levelypnew .
+   52  docker images
+   53  docker run -d -p 82:80 levelupnew
+   54  docker run -d -p 82:80 levelypnew
+   55  docker ps
+   56  clear
+   57  cd ..
+   58  mkdir pyc
+   59  cd pyc
+   60  vi code.py
+   61  ci dockerfile
+   62  vi dockerfile
+   63  docker build pyimg .
+   64  ls
+   65  docker build -t newimg .
+   66  docker images
+   67  docker run -it newimg
+   68  docker ps
+   69  docker run -it newimg
+   70  cd /
+   71  clear
+   72  hello
+   73  clear
+   74  docker ps  
+   75  docker ps -a
+   76  clear
+   77  docker ps 
+   78  docker inspect 2bef931eb23e
+   79  docker create volume demo
+   80  docker help volume
+   81  docker volumes ls
+   82  docker volume ls
+   83  docker volume create demo
+   84  docker volume ls
+   85  docker run -itd --name sai -v demo ububtu
+   86* 
+   87  docker ps
+   88  docker inspect 080d2b71b1a5
+   89  ls
+   90  cd levelup
+   91  ls
+   92  vi index.html
+   93  cd ..
+   94  mkdir bindmount
+   95  cd bindmount
+   96  vi index.html
+   97  ls
+   98  pwd
+   99  ls
+  100  vi index.html
+  101  history
