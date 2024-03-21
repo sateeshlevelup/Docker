@@ -1,0 +1,44 @@
+🚀 Container Management
+docker create: docker create --name my-nginx nginx
+docker start: docker start my-nginx
+docker stop: docker stop my-nginx
+docker restart: docker restart my-nginx
+docker rm: docker rm my-nginx
+docker pause: docker pause my-nginx
+docker unpause: docker unpause my-nginx
+docker run: docker run --name my-nginx -d nginx
+docker exec: docker exec -it my-nginx bash
+docker attach: docker attach my-nginx
+docker commit: docker commit my-nginx my-custom-nginx
+-----------------------------------------
+
+docker build: docker build -t my-custom-app .
+docker push: docker push my-custom-app
+docker pull: docker pull nginx
+docker rmi: docker rmi my-custom-app
+docker tag: docker tag my-custom-app myrepo/my-custom-app:latest
+docker import: cat mycontainer.tar.gz | docker import - mycontainerimage:latest
+docker load: docker load < myimage.tar.gz
+docker save: docker save -o myimage.tar.gz myimage:latest
+
+  -----------------------------------------------------
+docker network create: docker network create my-network
+docker network rm: docker network rm my-network
+docker network ls: docker network ls
+docker network inspect: docker network inspect my-network
+docker network connect: docker network connect my-network my-nginx
+docker network disconnect: docker network disconnect my-network my-nginx
+
+-------------------------------------------------------------------
+ docker volume create: docker volume create my-volume
+docker volume rm: docker volume rm my-volume
+docker volume ls: docker volume ls
+docker volume inspect: docker volume inspect my-volume
+  ------------------------------------------------------
+docker login: docker login --username my-username
+docker logout: docker logout
+docker info: docker info
+docker version: docker version
+docker stats: docker stats
+docker inspect: docker inspect my-nginx
+docker history: docker history nginx
