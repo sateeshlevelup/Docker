@@ -1,0 +1,18 @@
+docker network ls
+docker network inspect [network_name]
+docker network create --driver bridge [network_name]
+docker network connect [network_name] [container_name]
+docker network disconnect [network_name] [container_name]
+docker network rm [network_name]
+
+
+Practice Exercises
+Exercise 1: Creating and Inspecting a Docker Bridge Network
+
+Create a new bridge network named my-bridge-network.
+Run two containers (container1 and container2), and connect them to my-bridge-network.
+Inspect my-bridge-network to see the containers attached to it.
+Exercise 2: Communication Between Containers
+
+Execute a command in container1 to install ping (if not already present).
+Use ping from container1 to container2 using its IP address (obtained from network inspection) to test connectivity.
