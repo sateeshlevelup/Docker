@@ -1,4 +1,4 @@
-Docker build  <name> .
+Docker build  -t <name> .
 Docker run -it <image name>
 
 Enter the Min value
